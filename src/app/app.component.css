@@ -1,0 +1,23 @@
+.bg-fondo {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("img/fondo 3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.bg-gold {
+    background-color: #400078b2 !important; /* Color dorado */
+  }
+
+  .navbar-dark .navbar-nav .nav-link {
+    color: #fffafa !important; /* Un dorado más brillante para los links */
+  }
+
+  .navbar-dark .navbar-brand {
+    color: #ffffff !important; /* Color dorado para la marca */
+  }

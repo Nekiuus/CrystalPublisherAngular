@@ -1,0 +1,129 @@
+.home-container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, #ad6de6, #6335be);
+  color: white;
+  text-align: center;
+  position: relative;
+  border-radius: 0;
+  box-shadow: none;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.highlight {
+  font-family: 'Forum', cursive;
+  font-weight: 600;
+  color: #ffffff;
+  text-shadow: 0 0 10px #ffffffaa;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  color: #e0dfff;
+}
+
+.intro {
+  max-width: 700px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #f0f0ff;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 700px;
+  text-align: left;
+}
+
+.features li {
+  margin: 1rem 0;
+  font-size: 1rem;
+  color: #eae6ff;
+}
+
+.btn-start {
+  background: #6c1ac6;
+  color: white;
+  border: none;
+  padding: 0.9rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-start:hover {
+  background: #8e2de2;
+}
+
+/* Círculos decorativos */
+@keyframes float-small {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(50px, -80px);
+  }
+}
+
+@keyframes float-medium {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-70px, 100px);
+  }
+}
+
+@keyframes float-large {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(80px, -120px);
+  }
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15); /* Más claro y más visible */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); /* Resplandor sutil */
+  pointer-events: none;
+  z-index: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.circle.small {
+  width: 80px;
+  height: 80px;
+  bottom: 15%;
+  left: 10%;
+  animation: float-small 6s ease-in-out infinite;
+}
+
+.circle.medium {
+  width: 120px;
+  height: 120px;
+  top: 10%;
+  right: 15%;
+  animation: float-medium 8s ease-in-out infinite;
+}
+
+.circle.large {
+  width: 180px;
+  height: 180px;
+  bottom: 5%;
+  right: 5%;
+  animation: float-large 10s ease-in-out infinite;
+}
