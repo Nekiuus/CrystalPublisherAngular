@@ -14,8 +14,9 @@ export const routes: Routes = [
   { path: 'admin', component: AdminComponent, canActivate: [AuthGuard] },
   { path: 'favorito', component: FavoritoComponent },
   { path: 'libro', component: LibroComponent },
+   {path: 'nosotros', component:NosotrosComponent },
   { path: 'usuario', component: UsuarioComponent, canActivate: [AuthGuard] },
   { path: 'login', component: LoginComponent },
   { path: '**', redirectTo: 'login' },
-  {path: 'nosotros', component:NosotrosComponent } // Ruta comodín para no encontradas
+  // Ruta comodín para no encontradas
 ];

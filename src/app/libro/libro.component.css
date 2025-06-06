@@ -1,7 +1,48 @@
 
-.container {
-  margin-top: 20px;
+.descripcion-libros {
+  text-align: center;
+  margin-top: 130px;
+  margin-bottom: 30px;
+  padding: 20px;
+  color: #4a287b;
 }
-.form-group {
-  margin-bottom: 15px;
+
+.descripcion-libros h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.descripcion-libros p {
+  font-size: 1.1rem;
+  color: #5e5e5e;
+}
+
+.container {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  padding: 30px;
+}
+
+.btn-primary {
+  background-color: #7d4acb;
+  border-color: #7d4acb;
+}
+
+.btn-primary:hover {
+  background-color: #6c3db4;
+}
+
+input.form-control {
+  border-radius: 8px;
+}
+
+.table {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.alert-danger {
+  border-radius: 8px;
 }
